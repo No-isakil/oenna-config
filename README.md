@@ -5,4 +5,8 @@ install go-md2man
 sudo usermod -aG video user
 #copy backlight rules file into /etc/udev/rules.d/backlight.rules
 #install paru
-#install swhkd-git 
+#install swhkd-git
+
+#install nvm
+200~curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.39.7/install.sh | bash 
+nvm install node
