@@ -3,14 +3,16 @@
 #
 
 # If not running interactively, don't do anything
-[[ $- != *i* ]] && return
+#[[ $- != *i* ]] && return
 
 #if [ -f ~/.bash_profile ]; then
 #    . ~/.bash_profile
 #fi
 
+#exec zellij
 alias ls='ls --color=auto'
 alias grep='grep --color=auto'
+alias ll='ls -al --color=auto'
 PS1='[\u@\h \W]\$ '
 #test
 
