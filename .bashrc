@@ -5,9 +5,9 @@
 # If not running interactively, don't do anything
 [[ $- != *i* ]] && return
 
-if [ -f ~/.bash_profile ]; then
-    . ~/.bash_profile
-fi
+#if [ -f ~/.bash_profile ]; then
+#    . ~/.bash_profile
+#fi
 
 alias ls='ls --color=auto'
 alias grep='grep --color=auto'

@@ -9,4 +9,9 @@ sudo usermod -aG video user\
 
 #install nvm\
 200~curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.39.7/install.sh | bash 
-\nvm install node
+nvm install node\
+
+ssh config = etc/sshd_config\
+Edit to PermitUserEnvironment = yes
+
+
