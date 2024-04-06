@@ -6,4 +6,4 @@
 
 
 
-#exec zellij
+exec zellij

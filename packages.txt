@@ -1,0 +1,5 @@
+nvim
+htop
+neofetch
+zellij
+tailscale
