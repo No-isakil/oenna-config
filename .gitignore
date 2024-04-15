@@ -1,6 +1,4 @@
 gh/
 venv/*
-google_chrome/*
-google_chrome/
-obs-studio/
-obs-studio/*
+.config/google_chrome/
+.config/obs-studio/
