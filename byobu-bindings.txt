@@ -1,0 +1,5 @@
+split vert: ctrl + a then %
+split hori: ctrl + a then |
+
+switch focus: shift + ↑ ↓ ← →
+

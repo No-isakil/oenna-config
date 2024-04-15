@@ -7,3 +7,4 @@
 
 
 #exec zellij
+. "$HOME/.cargo/env"
