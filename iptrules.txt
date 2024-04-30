@@ -27,10 +27,22 @@ COMMIT
 :ts-input - [0:0]
 -A INPUT -j ts-input
 -A INPUT -p tcp -m tcp --dport 80 -j ACCEPT
+-A INPUT -p icmp -j ACCEPT
+-A INPUT -m state --state RELATED,ESTABLISHED -j ACCEPT
+-A OUTPUT -p icmp -j ACCEPT
+-A INPUT -p tcp -m tcp --dport 43 -j ACCEPT
+-A INPUT -p tcp -m tcp --dport 53 -j ACCEPT
+-A OUTPUT -p tcp --dport 43 -j ACCEPT
+-A OUTPUT -p tcp --dport 53 -j ACCEPT
+
+-A OUTPUT -p udp --dport 43 -j ACCEPT
+-A OUTPUT -p udp --dport 53 -j ACCEPT
+
 -A INPUT -p tcp -m tcp --dport 443 -j ACCEPT
 -A INPUT -p tcp -m tcp --dport 38820 -j ACCEPT
 -A INPUT -p tcp -m tcp --dport 3000 -j ACCEPT
--A INPUT -j DROP
+
+
 -A FORWARD -j ts-forward
 -A FORWARD -j DOCKER-USER
 -A FORWARD -j DOCKER-ISOLATION-STAGE-1
